@@ -1,0 +1,6 @@
+.env
+.env.*
+!.env.example
+app/data/
+app/data-demo/
+node_modules/

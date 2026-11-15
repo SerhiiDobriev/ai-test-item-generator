@@ -1,0 +1,8 @@
+.git
+.github
+**/node_modules
+**/.env
+app/data
+app/data-demo
+app/tests
+docs

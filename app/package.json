@@ -1,0 +1,16 @@
+{
+  "name": "generator-zavdan",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test --test-concurrency=1 tests/server.test.js tests/claude.test.js tests/openrouter.test.js tests/openai.test.js tests/zakaz.test.js tests/rashody.test.js tests/gruppa_a.test.js tests/gruppa_b.test.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.5.0"
+  }
+}

@@ -1,0 +1,15 @@
+# Local demo: http://localhost:8080, password "demo".
+# Fictional data, prerecorded AI answers, no API keys needed. The database is rebuilt on every start.
+services:
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:8080:3000"
+    environment:
+      DEMO: "1"
+      DEMO_RESET: "1"
+    volumes:
+      - demo-data:/data
+
+volumes:
+  demo-data:
